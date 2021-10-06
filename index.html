@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./src/css/style.css">
+    <title>Kenziefy</title>
+</head>
+
+<body>
+    <main>
+        <aside class="sidebarMenu">
+            <img src="./src/img/logo.png" alt="Logo Kenziefy">
+        
+            <nav class="menuNav">
+                <ul class="listaLinks">
+                    <li>
+                        <a href="https://kenzie.com.br/"><img src="./src/img/icone1.png" alt="Home">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://kenzie.com.br/"><img src="./src/img/icone2.png" alt="Browse">Browse</a>
+                    </li>
+
+                    <li class="liked">
+                        <a href="https://kenzie.com.br/"><img src="./src/img/icone3.png" alt="Liked songs">Liked songs</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <section class="secaoMusicas">
+            <header class="cabecalho">
+                <div class="user">
+                    <a href="https://www.freepik.com"><img src="./src/img/user.png" title="Ícone: Freepik" alt="User"></a>
+                    <h2>Marianna</h2>
+                </div>
+
+                <div class="qtdMusicas">
+                    <p>7 songs</p>
+                </div>
+            </header>
+
+            <div class="areaListaMusicas">
+                <button id="btPause">PAUSE</button>
+
+                <div class="cabecalhoInfoMusicas">
+                    <p class="primeiroItem">TITLE</p>
+                    <p>ARTIST</p>
+                    <p>ALBUM</p>
+                </div>
+
+                <ul class="listaMusicas"></ul>
+            </div>
+        </section>
+
+        <section class="areaPlayer">
+            <audio src="" id="saidaAudio"></audio>
+
+                <div class="infoMusicaAtual">
+                    <figure class="imagemAlbum">
+                        <img id="capaAlbum" src="./src/img/album.jpeg" alt="Album">
+                    </figure>
+                   
+                    <div class="infoAlbum">
+                        <h2 id="nomeMusica"></h2>
+                        <p id="nomeAlbum"></p>
+                    </div>
+                </div>
+
+                <div class="areaPlayerControles">
+                    <button id="btPrev"></button>
+                    <button id="btPlay"></button>
+                    <button id="btNext"></button>
+                </div>
+
+                <div class="areaPlayerVolume">
+                    <input type="range" max="5" value="1" step="0.1">
+                </div>
+        </section>
+    </main>
+    <script type="text/javascript" src="./src/js/script.js"></script>
+</body>
+</html>
