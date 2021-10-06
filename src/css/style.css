@@ -1,0 +1,198 @@
+body, main, img, nav, ul, li, a, section, header, div, h2, p, figure {
+    margin: 0;
+    padding: 0;
+    color: #F1F1F1;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background: linear-gradient(0deg, #121212, #252525);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.sidebarMenu {
+    width: 15%;
+    padding: 30px;
+    height: calc(100% - 167px);
+}
+
+.sidebarMenu > img {
+    margin-bottom: 25px;
+}
+
+.listaLinks > li {
+    margin-bottom: 17px;
+}
+
+.listaLinks > li > a {
+    color: #F1F1F1;
+    display: flex;
+    align-items: center;
+}
+
+.listaLinks > li > a > img {
+    width: 28px;
+    margin-right: 20px;
+}
+
+.liked:hover {
+    background-image: url(../img/icone3-hover.png);
+    background-repeat: no-repeat;
+    
+}
+
+.secaoMusicas {
+    width: 80%;
+    background-color: #181818;
+}
+
+.cabecalho {
+    background-image: url(../img/header.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    position: relative;
+    padding: 20px 80px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    float: right;
+}
+
+.user > img {
+    margin-right: 20px;
+}
+
+.user > h2 {
+    font-weight: lighter;
+}
+
+.qtdMusicas {
+    position: absolute;
+    left: 80px;
+    bottom: 20px;
+}
+
+.qtdMusicas > p {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.areaListaMusicas {
+    padding: 20px 80px;
+}
+
+#btPause {
+    background-color: #6E6FF5;
+    color: #F1F1F1;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 7px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.cabecalhoInfoMusicas {
+    display: flex;
+    border-bottom: 2px solid #646464;
+    padding: 8px 56px;
+}
+
+.cabecalhoInfoMusicas > .primeiroItem { 
+    width: 60%;
+}
+
+.cabecalhoInfoMusicas > p {
+    width: 25%;
+}
+
+.listaMusicas {
+    height: 200px;
+    overflow-y: scroll;
+}
+
+.listaMusicas > li {
+    display: flex;
+    padding: 8px 56px;
+    border-bottom: 1px solid #646464;
+}
+
+.listaMusicas > li > .primeiroItem {
+    width: 60%;
+}
+
+.listaMusicas > li > p {
+    width: 25%;
+}
+
+.areaPlayer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 80px;
+}
+
+.infoMusicaAtual {
+    display: flex;
+    align-items: center;
+}
+
+.imagemAlbum {
+    margin-right: 40px;
+}
+
+#capaAlbum {
+    width: 85px;
+}
+
+.infoAlbum > h2 {
+    margin-bottom: 8px;
+}
+
+.areaPlayerControles > button {
+    width: 31px;
+    height: 31px;
+    background: transparent;
+    border: none;
+    background-position: center;
+    background-size: 23px;
+    background-repeat: no-repeat;
+}
+
+#btPrev {
+    background-image: url(../img/previous.png);
+}
+
+#btPlay {
+    background-image: url(../img/play.png);
+    background-size: cover;
+    margin: 0 20px;
+}
+
+#btPlay.pause {
+    background-image: url(../img/pause.png);
+}
+
+#btNext {
+    background-image: url(../img/next.png);
+}
+
+.areaPlayerVolume {
+    background-image: url(../img/volume.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    padding-left: 30px;
+}
